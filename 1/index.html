@@ -7,22 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="nav"></nav>
-    <div id="logo">
-        <p id="logo-text"><b>Google</b></p>
-    </div>
+    <section id="main-section">
+        <div id="logo">
+            <p id="logo-text"><b>Google</b></p>
+        </div>
 
-    <div id="search-box">
-        <button id="search-button" class="search-box-elements">S</button>
-        <input type="text" placeholder="Search Google or type an URL" class="search-box-elements">
-        <button id="mic-button" class="search-box-elements">M</button>
-        <button id="camera-button" class="search-box-elements">C</button>
-    </div>
-    <div class="shortcut-layer">
-        <div class="shortcut-icon"></div>
-        <div class="shortcut-text"></div>
-    </div>
-    <button id="customize-button"></button>
+        <div id="search-box">
+            <button id="search-button" class="search-box-elements">🔎</button>
+            <input id="search-input" type="text" placeholder="Search Google or type an URL" class="search-box-elements">
+            <button id="mic-button" class="search-box-elements">🎤</button>
+            <button id="camera-button" class="search-box-elements">📷</button>
+        </div>
+
+        <div id="shortcut-layer">
+            <button id="shortcut-button">+
+            </button>
+            <p id="shortcut-text">Add Shortcut</p>
+        </div>
+    </section>
+
+
+    <section id="bottom-section">
+        <button id="customize-button">🖊 Customize Chrome</button>
+    </section>
+
     <script src="index.js"></script>
 </body>
 </html>

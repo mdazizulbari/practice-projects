@@ -3,15 +3,16 @@
     font-family: Arial, Helvetica, sans-serif ;
     background-color: rgb(61, 61, 61);
 }
-body {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 95vh;
+    gap: 30px;
 }
 
 #logo {
-    display: flex;
     font-size: 5em;
 }
 #logo-text {
@@ -20,7 +21,6 @@ body {
 }
 
 #search-box {
-    display: flex;
     border-radius: 50px;
     background-color: white;
     padding: 10px 10px;
@@ -30,4 +30,38 @@ body {
     color: gray;
     background-color: transparent;
     border: none;
+}
+#search-input {
+}
+
+
+#shortcut-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#shortcut-button {
+    border-radius: 50px;
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+#shortcut-text {
+    color: white;
+    padding-top: 15px;
+    font-size: small;
+}
+
+#bottom-section {
+    height: 5vh;
+    display: flex;
+    align-items: end;
+}
+#customize-button {
+    color: white;
+    background-color: darkblue;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 10px;
 }

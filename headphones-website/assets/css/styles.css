@@ -145,12 +145,12 @@ img {
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: hsla(23, 12%, 4%, .2);
+    background-color: hsla(23, 12%, 4%, 0.2);
     width: 100%;
     padding-block: 5.5rem 4.5rem;
     backdrop-filter: blur(32px);
     -webkit-backdrop-filter: blur(32px);
-    transition: top .4;
+    transition: top .4s;
   }
 }
 .nav__list{
@@ -159,7 +159,12 @@ img {
   flex-direction: column;
   row-gap: 2.5rem;
 }
-.nav__list:hover{
+.nav__link{
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+.nav__link:hover{
   color: var(--first-color);
 }
 .nav__close{
@@ -180,6 +185,11 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  position: relative;
+  padding-block: 7rem 1rem;
+  row-gap: 2.5rem;
+}
 .home__content{
   position: relative;
   display: grid;
@@ -191,13 +201,13 @@ img {
 .home__title{
   font-size: var(--biggest-font-size);
   display: flex;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
   color: var(--first-color);
   position: absolute;
   top: -2rem;
   justify-self: center;
 }
-.home__title span:nth-child(2){
+ .home__title span:nth-child(2){
   z-index: -1;
 }
 .home__tooltip{
@@ -210,7 +220,7 @@ img {
 }
 .home__tooltip-text{
   background: var(--gradient-color);
-  padding: 2.5rem 7.5rem;
+  padding: 0.25rem 0.75rem;
   color: var(--white-color);
   font-weight: var(--font-medium);
   border-radius: 4rem;
@@ -219,7 +229,7 @@ img {
   transform: translate(60px, -40px);
   white-space: nowrap;
 }
-.home__socail{
+.home__social{
   display: grid;
   justify-items: center;
   row-gap: 6rem;
@@ -227,13 +237,13 @@ img {
   top: 9rem;
   left: -1.5rem;
 }
-.home__socail-text{
+.home__social-text{
   position: relative;
   rotate: 90deg;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
-.home__socail-text::after{
+.home__social-text::after{
   content: '';
   width: 48px;
   height: 1px;
@@ -244,21 +254,22 @@ img {
   right: -64px;
   margin-block: auto;
 }
-.home__socail-links{
+.home__social-links{
   display: grid;
-  row-gap: .75rem;
+  row-gap: 0.75rem;
 }
-.home__socail-link{
+.home__social-link{
   font-size: 1.25rem;
   color: var(--text-color);
   transition: color .4s;
 }
-.home__socail-link:hover{
+.home__social-link:hover{
   color: var(--first-color);
 }
 .home__button{
   justify-self: center;
 }
+/* 24min */
 /*=============== BUTTON ===============*/
 
 
